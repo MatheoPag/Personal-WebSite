@@ -226,7 +226,7 @@ header {
     cursor: pointer;
 
 }
-.cvBtn{
+.xpBtn{
     background-color: var(--blue);
     border: var(--blue) solid 2px;
     color: var(--white);
@@ -234,7 +234,7 @@ header {
     transition: 200ms;
 }
 
-.cvBtn:hover{
+.xpBtn:hover{
   background-color: var(--white);
   color: #424242;
   font-weight: 500;
@@ -334,9 +334,9 @@ header {
   margin: 1rem;
 }
 
-.cv {
+.experiences {
   padding: 13vh 100px 0 100px;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -398,7 +398,7 @@ header {
 }
 
 .expBlock{
-  padding: 30px 35px 50px 35px ;
+  padding: 30px 35px 35px 35px ;
   background-color: var(--white)af5;
   border-radius: 15px;
   box-shadow: -1px 1px 5px 0px var(--shadow-black);
@@ -406,13 +406,15 @@ header {
   -moz-box-shadow: -1px 1px 5px 0px var(--shadow-black);
 }
 
-.expTitle {
+.expTitle_container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
-.expBlock h2{
+.expTitle {
   text-decoration: underline solid var(--blue) 3px;
+  font-size: 1.3rem;
   text-underline-offset: 5px;
   font-weight: 500;
 }
@@ -420,8 +422,31 @@ header {
   font-weight: 400;
 }
 
+.expBlock a{
+  text-decoration: none;
+  width: fit-content; 
+  display: flex;
+  align-items: center;
+}
+.one_line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expDuration{
+  margin-top: .3rem;
+  text-wrap: nowrap;
+  margin-left: 1.5rem;
+}
+
 .expBlock p{
   margin-top: 15px;
+}
+
+.link_icon {
+  margin-left: .2rem;
+  width: 18px;
+  height: 18px;
 }
 
 #cv2 {
@@ -503,7 +528,7 @@ iframe {
 
   }
 
-  .cv {
+  .experiences {
     height: unset;
     padding-bottom: 150px;
   }
@@ -634,7 +659,7 @@ iframe {
     font-size: .9em;
   }
 
-  .cv {
+  .experiences {
     padding: 100px 30px;
     padding-bottom: 170px;
   }
@@ -706,7 +731,7 @@ iframe {
     border-radius: 10px;
   }
 
-  .expTitle {
+  .expTitle_container {
     flex-direction: column;
   }
 
@@ -784,7 +809,7 @@ iframe {
     grid-template-columns: repeat(1, 1fr);
 
   }
-  .cv {
+  .experiences {
     padding-bottom: 150px;
   }
   .competence {

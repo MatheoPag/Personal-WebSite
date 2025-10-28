@@ -19,7 +19,7 @@
         <div class="liens" id="panel">
             <button id="closePanel" class="toogleBtn" onclick="tooglePanel()"><img src="./images/close.png" alt="menu button"></button>
             <a href="#info" onclick="tooglePanel()">À propos de moi</a>
-            <a href="#cv" onclick="tooglePanel()">Mon CV</a>
+            <a href="#experiences" onclick="tooglePanel()">Mes experiences</a>
             <a href="#contacte" onclick="tooglePanel()">Me contacter</a>
             <a href="https://github.com/MatheoPag" target="_blank" id="projets" aria-valuetext="Changement de page : Redirection vers ma page github">Mes projets</a>
         </div>
@@ -47,7 +47,7 @@
                         <p>Je m'appelle Mathéo Paganardi, passionné d'informatique.<br>J’aime explorer différents domaines et créer mes propres projets — ce site en fait partie.</p>
                         <a href="#more_about_me" id="more" >Envie d'en savoir plus ? &#8595;</a>
                         <div class="liensInfo">
-                            <a href="#cv" class="cvBtn">Mon experience</a>
+                            <a href="#experiences" class="xpBtn">Mes experiences</a>
                             <a href="#contacte" class="contacteBtn">Me contacter</a>
                         </div>
                     </div>
@@ -99,52 +99,64 @@
             </div>
             <p class="os_pref">Je travaille aussi bien sous <b>Windows</b> que sous <b>Linux</b> — ce dernier restant mon préféré.<br>La plupart du temps, je travaille sur <b>Debian 12</b>.</p>
         </section>
-        <section class="cv" id="cv">
+        <section class="experiences" id="experiences">
             
-            <h1>Mon experience : </h1>
+            <h1>Mes experiences : </h1>
             <div class="experience">
                 <div class="expBlock">
-                    <div class="expTitle">
-                        <h2>Autodidacte</h2>
-                        <h3 class="expDate">2017</h3>
+                    <div class="expTitle_container">
+                        <h2 class="expTitle" style="font-size: 1.6rem;">Autodidacte</h2>
+                        <h3 class="expDuration"></h3>
                     </div>
-                    <p>Je me suis intéressé à l'informatique depuis mon plus jeune âge et j'ai appris grâce à Internet.</p>
+                    <h3></h3>
+                    <p style="margin-top: 1.5rem;">J’ai beaucoup appris en analysant des documentations en ligne, en observant le travail de personnes plus expérimentées et en m’inspirant de leurs approches dans mes propres projets. Cela m’a permis d’acquérir une solide base dans plusieurs domaines de l’informatique.</p>
                 </div>
                 <div class="expBlock">
-                    <div class="expTitle">
-                        <h2>Stage - Atelier</h2>
-                        <h3 class="expDate">2020-2021</h3>
+                    <div class="expTitle_container">
+                        <h2 class="expTitle">Menuisier et soudeur</h2>
+                        <h3 class="expDuration">6 mois</h3>
                     </div>
-                    <p>J'ai travaillé dans un atelier.</p>
+
+                    <h3>Île Maurice, 2020–2021</h3>
+                    <p>Apprentissage du travail manuel aux côtés d’un professionnel. Avec le temps, j’ai gagné en autonomie et participé à plusieurs projets rémunérés.</p>
                 </div>
                 <div class="expBlock">
-                    <div class="expTitle">
-                        <h2>Stage - CNOI</h2>
-                        <h3 class="expDate">2021</h3>
+                    <div class="expTitle_container">
+                        <h2 class="expTitle">Stage d'obeservation</h2>
+                        <h3 class="expDuration">1 semaine</h3>
                     </div>
-                    <p>J'ai effectué un stage avec un informaticien au <a href="https://cnoi.info">CNOI</a>.</p>
+                    <a href="https://cnoi.info" target="_blank"><h3>CNOI</h3><img class="link_icon" src="./images/icons/link.png" alt=""></a>
+                    <h3>Île Maurice, 2021</h3>
+                    <p>Observation du fonctionnement d’un projet collaboratif, de la gestion administrative aux opérations sur le terrain.</p>
                 </div>
                 <div class="expBlock">
-                    <div class="expTitle">
-                        <h2>Stage - Esokia</h2>
-                        <h3 class="expDate">2022</h3>
+                    <div class="expTitle_container">
+                        <h2 class="expTitle">Stage d'obeservation</h2>
+                        <h3 class="expDuration">1 semaine</h3>
                     </div>
-                    <p>J'ai effectué un stage chez <a href="https://esokia.com/fr">Esokia</a>, une agence spécialisée dans le web.</p>
+                    <a href="https://esokia.com" target="_blank"><h3>Esokia</h3><img class="link_icon" src="./images/icons/link.png" alt=""></a>
+                    <h3>Île Maurice, 2022</h3>
+                    <p>Suivi du processus complet de création d’un site web, depuis la conception de la maquette jusqu’au développement front-end et back-end.</p>
                 </div>
                 <div class="expBlock">
-                    <div class="expTitle">
-                        <h2>Stage - 101</h2>
-                        <h3 class="expDate">2023</h3>
+                    <div class="expTitle_container">
+                        <h2 class="expTitle">Vendeur</h2>
+                        <h3 class="expDuration">1 mois</h3>
                     </div>
-                    <p>J'ai réalisé un stage chez <a href="https://101-multimedia.com">101-multimedia</a>, un magasin d'informatique.</p>
+                    <a href="https://101-multimedia.com/" target="_blank"><h3>101-Multimedia</h3><img class="link_icon" src="./images/icons/link.png" alt=""></a>
+                    <span class="one_line"><h3>Île Maurice, 2021</h3><h3>Emploi saisonier</h3></span>
+                    <p>Accueil et conseil des clients particuliers (BtoC), vente de matériel informatique et assistance technique, développement de compétences en relation client et communication.</p>
                 </div>
                 <div class="expBlock">
-                    <div class="expTitle">
-                        <h2>OPUR</h2>
-                        <h3 class="expDate">2025</h3>
+                    <div class="expTitle_container">
+                        <h2 class="expTitle">Webmaster</h2>
+                        <h3 class="expDuration">1 semaine</h3>
                     </div>
-                    <p>Je me suis occupé de la maintenance du site de <a href="https://opur.org/">OPUR</a>, tant sur le backend que sur le frontend.</p>
+                    <a href="https://opur.org/" target="_blank"><h3>OPUR</h3><img class="link_icon" src="./images/icons/link.png" alt=""></a>
+                    <span class="one_line"><h3>Île Maurice, 2021</h3><h3>Prestation indépendante</h3></span>
+                    <p>Gestion complète d’un site e-commerce : mise à jour du contenu, actualisation des prix et photos, optimisation du front-end et du back-end. Développement de compétences en gestion de site, maintenance et suivi opérationnel.</p>
                 </div>
+
             </div>
         </section>
     </main>
