@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styleform.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>Matheo Paganardi</h1>
+            <h2 class="blue">/</h2>
+            <h2 class="light">Étudiant</h2>
+        </div>
+        <div class="liens" id="panel">
+            <button id="closePanel" class="toogleBtn" onclick="tooglePanel()"><img src="./images/close.png" alt="menu button"></button>
+            <a href="#info" onclick="tooglePanel()">À propos de moi</a>
+            <a href="#cv" onclick="tooglePanel()">Mon CV</a>
+            <a href="#contacte" onclick="tooglePanel()">Me contacter</a>
+            <a href="https://github.com/MatheoPag" target="_blank" id="projets" aria-valuetext="Changement de page : Redirection vers ma page github">Mes projets</a>
+        </div>
+        <button id="menu_btn" class="toogleBtn" onclick="tooglePanel()"><img src="./images/menu.png" alt=""/></button>
+    </header>
+    <main>
+        <section class="info" id="info">
+            <span class="infoBg"></span>
+            <div class="infoBox">
+                <div class="infoLeft">
+                    <div class="profilePicture">
+                        <img src="./images/profilePicture.jpg" alt=""/>
+                    </div>
+                    <div class="infoDescription">
+                        <h1>Matheo<br>Paganardi</h1>
+                        <div class="orderInfo">
+                            <h2 class="light">2007</h2>
+                            <h2 class="light" id="actual_status">Étudiant</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="infoRight">
+                    <h1 class="titleInfo">Bonjour.</h1>
+                    <div class="infoRightContaine">
+                        <h2>À propos de moi</h2>
+                            <div class="liensInfo">
+                            <a href="#cv" class="cvBtn">Mon CV</a>
+                            <a href="#contacte" class="contacteBtn">Me contacter</a>
+                        </div>
+                        <p>Je m'appelle Matheo Paganardi, je suis un passionné d'informatique et je suis a SUPINFO Lyon</p>
+                    </div>
+                    </div> 
+            </div>
+        </section>
+        <section class="cv" id="cv">
+            <div class="containerFrise">
+                <div class="frise">
+                    <div class="step">
+                        <span class="year">2010-2022</span>
+                        <span class="place">Ile Maurice</span>
+                        <span class="status">Primaire/Collège</span>
+                    </div>
+                    <div class="step">
+                        <span class="year">2022-2025</span>
+                        <span class="place">Ile Maurice</span>
+                        <span class="status">Lycée</span>
+                    </div>
+                    <div class="step">
+                        <span class="year">2025</span>
+                        <span class="place">Lyon (France)</span>
+                        <span class="status">Études supérieures</span>
+                    </div>
+                </div>
+            </div>
+            <h1>Mon experience : </h1>
+            <div class="experience">
+                <div class="expBlock">
+                    <div class="expTitle">
+                        <h2>Autodidacte</h2>
+                        <h3 class="expDate">2017</h3>
+                    </div>
+                    <p>Je me suis intéressé à l'informatique depuis mon plus jeune âge et j'ai appris grâce à Internet.</p>
+                </div>
+                <div class="expBlock">
+                    <div class="expTitle">
+                        <h2>Stage - Atelier</h2>
+                        <h3 class="expDate">2020-2021</h3>
+                    </div>
+                    <p>J'ai travaillé dans un atelier.</p>
+                </div>
+                <div class="expBlock">
+                    <div class="expTitle">
+                        <h2>Stage - CNOI</h2>
+                        <h3 class="expDate">2021</h3>
+                    </div>
+                    <p>J'ai effectué un stage avec un informaticien au <a href="https://cnoi.info">CNOI</a>.</p>
+                </div>
+                <div class="expBlock">
+                    <div class="expTitle">
+                        <h2>Stage - Esokia</h2>
+                        <h3 class="expDate">2022</h3>
+                    </div>
+                    <p>J'ai effectué un stage chez <a href="https://esokia.com/fr">Esokia</a>, une agence spécialisée dans le web.</p>
+                </div>
+                <div class="expBlock">
+                    <div class="expTitle">
+                        <h2>Stage - 101</h2>
+                        <h3 class="expDate">2023</h3>
+                    </div>
+                    <p>J'ai réalisé un stage chez <a href="https://101-multimedia.com">101-multimedia</a>, un magasin d'informatique.</p>
+                </div>
+                <div class="expBlock">
+                    <div class="expTitle">
+                        <h2>OPUR</h2>
+                        <h3 class="expDate">2025</h3>
+                    </div>
+                    <p>Je me suis occupé de la maintenance du site de <a href="https://opur.org/">OPUR</a>, tant sur le backend que sur le frontend.</p>
+                </div>
+            </div>
+            <a href="#cv2" id="linkcv2" class="linkPage">Voir mes compétences &#x2198;</a>
+        </section>
+        <section class="cv" id="cv2">
+            <div class="competence">
+                <h1>Mes compétences en informatique : </h1>
+                <div class="maitrises">
+                    <h2>Les langages bien maîtrisés</h2>
+                    <ul>
+                        <li>Python 3</li>
+                        <li>HTML 5</li>
+                        <li>CSS</li>
+                        <li>PHP 8</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="non-maitrises">
+                    <h2>Les langages moyennement maîtrisés</h2>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>C#</li>
+                        <li>Bash</li>
+                    </ul>
+                </div>
+                <div class="os">
+                    <img src="./images/Tux.png" alt="Tux">
+                    <h2>Je travaille aussi bien sous Windows que sous Linux, même si Linux reste mon OS préféré ! La plupart du temps, je travaille sur <b>Debian 12.</b></h2>
+                </div>
+            </div>
+            <a href="#contacte" id="linkContacte" class="linkPage">Me contacter &#x2198;</a>
+
+        </section>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>

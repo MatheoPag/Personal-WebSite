@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/home.png" type="image/x-icon">
+    <title>MatheoPaganardi.fr - Page d'accueil</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>Matheo Paganardi</h1>
+            <h2 class="blue">/</h2>
+            <h2 class="light">Étudiant</h2>
+        </div>
+        <div class="contact">
+            <a href="./contact.html" aria-label="Aller a la page contact">Me contacter</a>
+        </div>
+    </header>
+    <main>
+        <h1 class="hello">Bonjour,</h1>
+        <h2>Bienvenue sur le site de <span class="underline">Mathéo Paganardi</span></h2>
+        <div class="links">
+            <h2 class="titleLink">Où voulez-vous aller ?</h2>
+            <div class="linksGrid">
+                <div class="linkContainer">
+                    <div class="imgContainer">
+                        <a href="https://matheo.paganardi.fr/portfolio" target="_blank" aria-label="aller au site : Portfolio de Matheo Paganardi"><img src="./images/projet_img/portfolio.png" alt=""></a>
+                    </div>
+                    <div class="linkInfo">
+                        <h2 class="underline">Portfolio</h2>
+                        <h3>Apprenez-en un peu plus sur moi</h3>
+                    </div>
+                    <div class="link">
+                        <a href="https://matheo.paganardi.fr/portfolio" target="_blank" aria-label="aller au site : Portfolio de Matheo Paganardi ">Aller au site</a>
+                        <button aria-label="copy link" onclick="copyLink('https://matheo.paganardi.fr/portfolio')"><img src="./images/link_white.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="linkContainer">
+                    <div class="imgContainer">
+                        <a href="https://github.com/MatheoPag" target="_blank" aria-label="aller au site : Page GitHub de Matheo Paganardi"><img src="./images/projet_img/github.png" alt=""></a>
+                    </div>
+                    <div class="linkInfo">
+                        <h2 class="underline">Ma page GitHub</h2>
+                        <h3>Explorez mes projets</h3>
+                    </div>
+                    <div class="link">
+                        <a href="https://github.com/MatheoPag" target="_blank" aria-label="aller au site : Page GitHub de Matheo Paganardi">Aller au site</a>
+                        <button aria-label="copy link" onclick="copyLink('https://github.com/MatheoPag')"><img src="./images/link_white.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

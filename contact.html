@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>MatheoPaganardi.fr - Page d'aide</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>Matheo Paganardi</h1>
+            <h2 class="blue">/</h2>
+            <h2 class="light">Étudiant</h2>
+        </div>
+    </header>
+    <main>
+        <div class="returnContainer">
+            <a href="./index.html" aria-label="Retour a la page d'accueil">Retour</a>
+        </div>
+        <section class="contacte" id="contacte">
+            <form action="https://api.web3forms.com/submit" method="POST" class="formContacte">
+                <div class="info_form">
+                    <input type="hidden" name="access_key" value="c9060b78-ca4e-401d-abd6-784f6f6993c0">
+                    <label for="email">E-mail :</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="lname">Nom Prenom</label>
+                    <input type="text" name="name" id="lname" required>
+                    <label for="tel">N. Telephone</label>
+                    <input type="tel" name="tel" id="tel">
+                    <label for="message">Votre message</label>
+                    <input type="text" name="message" id="message">
+                    <div class="recontacter">
+                        <span></span>
+                        <input type="checkbox" name="accepte" id="accepte" required>
+                        <label for="accepte">En cochant cette case, vous acceptez de recevoir des e-mails de l'équipe Silhouette</label>
+                    </div>
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

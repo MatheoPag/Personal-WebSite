@@ -1,0 +1,123 @@
+
+a{
+  color: #000;
+}
+.light {
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 600;
+
+}
+
+h2 {
+  font-weight: 400;
+}
+
+.contacte {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    height: fit-content;
+}
+
+.formContacte {
+    width: 30%;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info_form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;    
+}
+.formContacte label{
+    margin-bottom: 10px;
+}
+
+.formContacte input {
+    margin-bottom: 15px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: solid #575757 1px ;
+    font-size: 1.2em;
+    line-height: 1;
+  }
+
+  .formContacte input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+  }
+
+.formContacte input:focus {
+  outline: none;
+}
+
+.formContacte input[type="submit"] {
+    margin-top: 10px;
+    background-color: #4361ee;
+    border: #4361ee solid 2px;
+    color: #fff;
+    width: 200px;
+    height: 35px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 200ms;
+
+}
+
+.formContacte input[type="submit"]:hover{
+    background-color: #fff;
+    color: #000;
+}
+.recontacter {
+  margin-top: 5px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.recontacter input[type="checkbox"] {
+    width: 50px;
+}
+
+#licence {
+  display: flex;
+  justify-content: center;
+  font-size: .7rem;
+}
+
+
+@media screen and (max-width: 993px) {
+    .formContacte {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width : 2700px ){
+  .formContacte input {
+    font-size: 1.8em;
+  }
+
+  label {
+    font-size: 1.9em;
+  }
+
+  .formContacte input[type="submit"] {
+    margin-top: 40px;
+    width: 300px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .formContacte {
+    width: 95%;
+  }
+}
