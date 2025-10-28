@@ -43,7 +43,7 @@ a{
 
 h1 {
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 h2 {
@@ -153,6 +153,11 @@ header {
   margin-bottom: 20px;
 }
 
+.right {
+  text-align: end;
+  margin-left: 1rem;
+}
+
 .infoDescription {
   list-style-type: none;
   padding-left: 0; 
@@ -209,48 +214,51 @@ header {
 .liensInfo {
   background:none;
   margin-top: 40px;
-  width: 300px;
-  height: 35px;
+  /* height: 35px; */
   display: flex;
 }
 
 .liensInfo a{
-    display: flex;
-    width: 48%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-size: 0.9em;
-    border-radius: 25px;
-    cursor: pointer;
-
-}
-.xpBtn{
-    background-color: var(--blue);
-    border: var(--blue) solid 2px;
-    color: var(--white);
-    margin-right: 2%;
-    transition: 200ms;
+  display: flex;
+  /* height: 100%; */
+  /* width: 10rem; */
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 0.9em;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: .4rem .7rem;
 }
 
-.xpBtn:hover{
+.moreBtn{
+  background-color: var(--blue);
+  border: var(--blue) solid 2px;
+  color: var(--white);
+  margin-right: 2%;
+  transition: 200ms;
+}
+
+.moreBtn:hover{
   background-color: var(--white);
   color: #424242;
   font-weight: 500;
+  transform: translateY(-2px);
+
 }
 
-.contacteBtn{
+.xpBtn{
   background: none;
   border: var(--black) solid 2px;
   transition: 200ms;
 }
 
-.contacteBtn:hover{
+.xpBtn:hover{
   background-color: var(--blue);
   color: var(--white);
   border: var(--blue) solid 2px;
   font-weight: 500;
+  transform: translateY(-2px);
 }
 .infoRightContaine p {
   margin-bottom: .5rem;
@@ -530,7 +538,7 @@ iframe {
 
   .experiences {
     height: unset;
-    padding-bottom: 150px;
+    padding: 13vh 50px 150px 50px;
   }
 
   .liens a{
@@ -662,8 +670,11 @@ iframe {
   .experiences {
     padding: 100px 30px;
     padding-bottom: 170px;
+    
   }
-
+  .experience {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
   .os_pref {
     margin-right: 0;
   }
@@ -731,9 +742,6 @@ iframe {
     border-radius: 10px;
   }
 
-  .expTitle_container {
-    flex-direction: column;
-  }
 
 }
 
@@ -803,11 +811,6 @@ iframe {
 
   .expBlock h2, .expBlock h3 {
     font-size: 1em;
-  }
-
-  .experience {
-    grid-template-columns: repeat(1, 1fr);
-
   }
   .experiences {
     padding-bottom: 150px;
@@ -894,11 +897,11 @@ iframe {
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 1.6em;
   }
 
   h2 {
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
 
 }
@@ -1010,4 +1013,10 @@ iframe {
 	.toogleBtn {
 		width: 30px;
 	}
+}
+
+@media screen and (max-width: 1450px) {
+  .experience {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
