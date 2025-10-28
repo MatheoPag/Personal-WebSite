@@ -80,10 +80,11 @@ h2 {
 .recontacter {
   margin-top: 5px;
     display: flex;
-    align-items: center;
+    align-items: start;
     width: 100%;
 }
 .recontacter input[type="checkbox"] {
+  margin-top: 3px;
     width: 50px;
 }
 
@@ -91,6 +92,10 @@ h2 {
   display: flex;
   justify-content: center;
   font-size: .7rem;
+}
+
+.recontacter label {
+  margin-left: .5rem;
 }
 
 

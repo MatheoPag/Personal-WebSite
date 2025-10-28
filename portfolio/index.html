@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./styleform.css">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
 </head>
 <body>
     <header>
         <div class="title">
-            <h1>Matheo Paganardi</h1>
+            <h1>Mathéo Paganardi</h1>
             <h2 class="blue">/</h2>
             <h2 class="light">Étudiant</h2>
         </div>
@@ -33,9 +34,8 @@
                         <img src="./images/profilePicture.jpg" alt=""/>
                     </div>
                     <div class="infoDescription">
-                        <h1>Matheo<br>Paganardi</h1>
+                        <h1>Mathéo<br>PAGANARDI</h1>
                         <div class="orderInfo">
-                            <h2 class="light">2007</h2>
                             <h2 class="light" id="actual_status">Étudiant</h2>
                         </div>
                     </div>
@@ -44,23 +44,19 @@
                     <h1 class="titleInfo">Bonjour.</h1>
                     <div class="infoRightContaine">
                         <h2>À propos de moi</h2>
-                            <div class="liensInfo">
-                            <a href="#cv" class="cvBtn">Mon CV</a>
+                        <p>Je m'appelle Mathéo Paganardi, passionné d'informatique.<br>J’aime explorer différents domaines et créer mes propres projets — ce site en fait partie.</p>
+                        <a href="#more_about_me" id="more" >Envie d'en savoir plus ? &#8595;</a>
+                        <div class="liensInfo">
+                            <a href="#cv" class="cvBtn">Mon experience</a>
                             <a href="#contacte" class="contacteBtn">Me contacter</a>
                         </div>
-                        <p>Je m'appelle Matheo Paganardi, je suis un passionné d'informatique et je suis a SUPINFO Lyon</p>
                     </div>
-                    </div> 
+                </div> 
             </div>
         </section>
-        <section class="cv" id="cv">
+        <section id="more_about_me" class="more_about_me">
             <div class="containerFrise">
                 <div class="frise">
-                    <div class="step">
-                        <span class="year">2010-2022</span>
-                        <span class="place">Ile Maurice</span>
-                        <span class="status">Primaire/Collège</span>
-                    </div>
                     <div class="step">
                         <span class="year">2022-2025</span>
                         <span class="place">Ile Maurice</span>
@@ -73,6 +69,38 @@
                     </div>
                 </div>
             </div>
+            <div class="more_about_me_container">
+                <div class="about_me">
+                    <h2>Qui est Mathéo PAGANARDI ? En 4 points...</h2>
+                    <div class="about_me_description">
+                            <span class="info_row"><img class="icon" src="./images/icons/user.png" alt=""/><p>J'ai grandi à l’Île Maurice et je vis aujourd’hui en France pour mes études en informatique.</p></span>
+                            <span class="info_row"><img class="icon" src="./images/icons/robotic-hand.png" alt=""/><p>La manière dont la technologie peut résoudre des problèmes réels et donner vie à des idées me fascine.</p></span>
+                            <span class="info_row"><img class="icon" src="./images/icons/project-management.png" alt=""/><p>Ma passion ? Explorer différents domaines de l’informatique, du software au hardware, et concrétiser mes projets, comme ce site.</p></span>
+                            <span class="info_row"><img class="icon" src="./images/icons/artificial-intelligence.png" alt=""/><p>L’intelligence artificielle est le domaine qui m'intéresse le plus, un domaine dans lequel j’aimerais me spécialiser et atteindre un haut niveau d’expertise.</p></span>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills_preview">
+                    <h2>Compétences clés</h2>
+                    <div class="skills_list">
+                        <span class="skill">Python<img class="icon" src="./images/icons/python.png" alt=""/></span>
+                        <span class="skill">HTML<img class="icon" src="./images/icons/html-5.png" alt=""/></span>
+                        <span class="skill">CSS<img class="icon" src="./images/icons/css-3.png" alt=""/></span>
+                        <span class="skill">JavaScript<img class="icon" src="./images/icons/js.png" alt=""/></span>
+                        <span class="skill">SQL<img class="icon" src="./images/icons/database.png" alt=""/></span>
+                        <span class="skill">C#<img class="icon" src="./images/icons/c-sharp.png" alt=""/></span>
+                        <span class="skill">PHP<img class="icon" src="./images/icons/web.png" alt=""/></span>
+                        <span class="skill">Bash<img class="icon" src="./images/icons/code.png" alt=""/></span>
+                        <span class="skill">Linux<img class="icon" src="./images/icons/linux.png" alt=""/></span>
+                        <span class="skill">Architecture de réseau<img class="icon" src="./images/icons/neural.png" alt=""/></span>
+                        <span class="skill">Arduino & électronique<img class="icon" src="./images/icons/technology.png" alt=""/></span>
+                    </div>
+                </div>
+            </div>
+            <p class="os_pref">Je travaille aussi bien sous <b>Windows</b> que sous <b>Linux</b> — ce dernier restant mon préféré.<br>La plupart du temps, je travaille sur <b>Debian 12</b>.</p>
+        </section>
+        <section class="cv" id="cv">
+            
             <h1>Mon experience : </h1>
             <div class="experience">
                 <div class="expBlock">
@@ -118,36 +146,6 @@
                     <p>Je me suis occupé de la maintenance du site de <a href="https://opur.org/">OPUR</a>, tant sur le backend que sur le frontend.</p>
                 </div>
             </div>
-            <a href="#cv2" id="linkcv2" class="linkPage">Voir mes compétences &#x2198;</a>
-        </section>
-        <section class="cv" id="cv2">
-            <div class="competence">
-                <h1>Mes compétences en informatique : </h1>
-                <div class="maitrises">
-                    <h2>Les langages bien maîtrisés</h2>
-                    <ul>
-                        <li>Python 3</li>
-                        <li>HTML 5</li>
-                        <li>CSS</li>
-                        <li>PHP 8</li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
-                <div class="non-maitrises">
-                    <h2>Les langages moyennement maîtrisés</h2>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>C#</li>
-                        <li>Bash</li>
-                    </ul>
-                </div>
-                <div class="os">
-                    <img src="./images/Tux.png" alt="Tux">
-                    <h2>Je travaille aussi bien sous Windows que sous Linux, même si Linux reste mon OS préféré ! La plupart du temps, je travaille sur <b>Debian 12.</b></h2>
-                </div>
-            </div>
-            <a href="#contacte" id="linkContacte" class="linkPage">Me contacter &#x2198;</a>
-
         </section>
     </main>
     <footer></footer>
