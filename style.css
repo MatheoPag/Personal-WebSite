@@ -1,11 +1,15 @@
+/* :root {
+  --primary: #fff;
+  --text: #000;
+  --accent: #4361ee;
+  --shadow: rgba(0,0,0,0.1);
+} */
 :root {
-  --white: #fff;
-  --black: #000;
-  --blue: #4361ee;
-  --dark-beige: #faebdc; 
-  --beige: #fffaf5;
-  --shadow-black: rgba(0,0,0,0.1);
-  --panel: #fdf6ee;
+  --primary: #202020;
+  --secondary: #787878ff;
+  --text: #dddddd;
+  --accent: rgb(97, 64, 196);
+  --shadow: rgba(0, 0, 0, 0.1);
 }
 
 @font-face {
@@ -27,23 +31,24 @@
   box-sizing: border-box;
   /* border: red 1px solid; */
   font-family: 'Montserrat';
+  color: var(--text);
 }
 
 a {
     text-decoration: none;
-    color: var(--black);
+    color: var(--text);
 }
 
 
 header {
-  background-color: var(--white);
+  background-color: var(--primary);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 8vh;   
   z-index: 1000;
-  box-shadow: 0 2px 5px var(--shadow-black); 
+  box-shadow: 0 2px 5px var(--shadow); 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,8 +66,8 @@ header {
 }
 
 
-.blue {
-  color: var(--blue);
+.accent {
+  color: var(--accent);
 }
 
 .contact a, .returnContainer a{
@@ -72,22 +77,23 @@ header {
     font-size: 1rem;
     border-radius: 25px;
     cursor: pointer;
-    background-color: var(--blue);
-    border: var(--blue) solid 2px;
-    color: var(--white);
+    background-color: var(--accent);
+    border: var(--accent) solid 2px;
+    color: var(--text);
     transition: 200ms;
 }
 
 .contact a:hover{
-    background-color: var(--white);
-    color: #424242;
+    background-color: var(--primary);
+    /* color: var(--accent); */
     font-weight: 500;
 }
 
 main {
-    margin-top: 10vh;
-    padding: 2rem 10rem;
+    padding: 10vh 10rem 2rem 10rem;
     min-height: 100vh;
+    background-color: var(--primary);
+
 }
 
 .hello {
@@ -95,7 +101,7 @@ main {
 }
 
 .underline {
-    text-decoration: underline solid 2px var(--blue);
+    text-decoration: underline solid 2px var(--accent);
     text-underline-offset: 4px
 }
 
@@ -120,9 +126,9 @@ main {
     padding-bottom: 1.3rem;
     border-radius: 2rem;
     overflow: hidden;
-    box-shadow: -20px 20px 30px 0px var(--shadow-black);
-    -webkit-box-shadow: 5px 5px 50px 0px var(--shadow-black);
-    -moz-box-shadow: -20px 20px 30px 0px var(--shadow-black);
+    box-shadow: -20px 20px 30px 0px var(--shadow);
+    -webkit-box-shadow:-20px 20px 30px 0px var(--shadow);
+    -moz-box-shadow: -20px 20px 30px 0px var(--shadow);
 }
 
 .imgContainer {
@@ -139,6 +145,7 @@ main {
 .linkInfo {
     padding: .8rem 1.5rem;
     width: 100%;
+    min-height: 130px;
 }
 
 .linkInfo h3 {
@@ -149,6 +156,7 @@ main {
 
 .link {
     display: flex;
+    /* height: ; */
     justify-content: center;
     width: fit-content;
     position: relative;
@@ -164,6 +172,7 @@ main {
     font-weight: 500;
 }
 
+
 .link button {
     cursor: pointer;
     display: flex;
@@ -173,7 +182,7 @@ main {
     transform:translateY(-.3rem); 
     height: fit-content;
     padding: .4rem;
-    background-color: var(--blue);
+    background-color: var(--accent);
     border: none;
 }
 
@@ -191,7 +200,7 @@ main {
 
 @media screen and (max-width : 1920px) {
     main {
-        padding: 2rem 3rem;
+        padding: 10vh 3rem 2rem 3rem;
     }
 
     .linksGrid {
@@ -283,7 +292,9 @@ main {
     h2 {
         font-size: .9rem;
     }
-
+    .linkInfo{
+        min-height: 0;
+    }
     header {
         padding: 0 .8rem;
     }

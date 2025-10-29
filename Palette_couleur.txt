@@ -1,0 +1,5 @@
+/* CSS HEX */
+--primary: #0d0d0dff;
+--secondary: #787878ff;
+--text: #d9d9d9ff;
+--accent: #764eeeff;
