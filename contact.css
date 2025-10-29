@@ -65,6 +65,7 @@ h2 {
     margin-top: 10px;
     background-color: #4361ee;
     border: #4361ee solid 2px;
+    color: #fff;
     width: 200px;
     height: 35px;
     border-radius: 25px;
@@ -74,8 +75,8 @@ h2 {
 }
 
 .formContacte input[type="submit"]:hover{
-    background-color: #fff;
-    color: #000;
+    background-color: transparent;
+    /* color: #000; */
 }
 .recontacter {
   margin-top: 5px;
