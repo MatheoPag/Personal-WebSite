@@ -299,6 +299,10 @@ main {
         padding: 0 .8rem;
     }
 
+    .returnContainer {
+        margin-top: 7vh;
+    }
+
     .contact a{
         margin-right: 0;
         font-size: .6rem;
