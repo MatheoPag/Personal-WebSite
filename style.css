@@ -47,13 +47,28 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 8vh;   
+  height: 12vh;   
   z-index: 1000;
   box-shadow: 0 2px 5px var(--shadow); 
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 30px;
+}
+
+.logo_container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#logo  {
+    height: 50%;
+}
+
+#logo_text {
+    margin-left: 1.5rem;
+    height: 20%;
 }
 
 .title, .liens{
@@ -91,10 +106,9 @@ header {
 }
 
 main {
-    padding: 10vh 10rem 2rem 10rem;
+    padding: 15vh 10rem 2rem 10rem;
     min-height: 100vh;
     background-color: var(--primary);
-
 }
 
 .hello {
@@ -202,7 +216,8 @@ main {
 
 @media screen and (max-width : 1920px) {
     main {
-        padding: 10vh 3rem 2rem 3rem;
+        padding: 15vh 3rem 2rem 3;
+
     }
 
     .linksGrid {
@@ -232,8 +247,11 @@ main {
 }
 
 @media screen and (max-width: 990px) {
+    header {
+        height: 10vh;
+    }
     main {
-        padding: 2rem 1.5rem;
+        padding: 10vh 1.5rem;
     }   
 }
 
@@ -241,6 +259,9 @@ main {
     .linksGrid {
         gap: 2rem 1rem;
         padding: 0 .2rem;
+    }
+    header {
+        height: 9vh;
     }
     .links {
         padding: 0 .5rem;
@@ -283,7 +304,6 @@ main {
 
 
 @media screen and (max-width: 575px) {
-
     .linksGrid {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -299,8 +319,14 @@ main {
     }
     header {
         padding: 0 .8rem;
+        height: 7vh;
+        display: flex;
+        justify-content: center;
     }
 
+    #logo_text {
+        display: none;
+    }
     .returnContainer {
         margin-top: 7vh;
     }
@@ -323,7 +349,7 @@ main {
         }
 }
 
-@media screen and (max-width: 450px) {
+/* @media screen and (max-width: 450px) {
     h1 {
         font-size: 1rem;
     }
@@ -331,4 +357,4 @@ main {
     h2 {
         font-size: .8rem;
     }
-}
+} */
