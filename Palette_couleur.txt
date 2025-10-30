@@ -1,5 +1,8 @@
 /* CSS HEX */
 --primary: #202020;
---secondary: #787878;
+--dark-surface: #232323;
+--surface: #333333;
 --text: #dddddd;
 --accent: #6140c4;
+--shadow: rgba(0,0,0,0.1);
+
