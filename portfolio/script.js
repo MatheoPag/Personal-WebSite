@@ -2,9 +2,14 @@ const panel = document.getElementById("panel")
 const open_btn = document.getElementById("menu_btn")
 const footer = document.querySelector("footer");
 
-fetch("form.html")
+fetch("/footer.html")
     .then(response => response.text())
     .then(data => { footer.innerHTML = data; })
+
+
+// fetch("form.html")
+//     .then(response => response.text())
+//     .then(data => { footer.innerHTML = data; })
 
 function tooglePanel(){
     panel.classList.toggle("active");

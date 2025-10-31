@@ -39,7 +39,7 @@
   color: var(--text);
 }
 
-main {
+body {
   background-color: var(--primary);
 }
 

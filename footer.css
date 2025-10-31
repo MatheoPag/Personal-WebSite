@@ -1,0 +1,137 @@
+:root {
+    --primary-footer : #1a1a1a;
+}
+
+/* *{ */
+    /* border: 1px red solid; */
+/* } */
+.footer_container {
+    margin-top: 7rem;
+    padding: 2.5rem 3.5rem 1rem 3.5rem;
+    height: 15rem;
+    background-color: var(--primary-footer);
+}
+
+.footer_container a{
+    text-decoration: none;
+}
+
+.footer_main {
+    position: relative;
+    height: 90%;
+}
+
+.footer_links {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer_logo_container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    
+}
+
+.footer_logo_container img{
+    height: 40%;
+    /* width: 100%; */
+}
+
+.footer_infos{
+    position: absolute;
+    right: 0;
+    text-align: end;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.footer_copyright{
+    height: 10%;
+    display: flex;
+    font-size: .8rem;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .footer_logo_container img{
+    height: 30%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .footer_container p, .footer_container a {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width : 575px){
+    .footer_container {
+        padding: 2.5rem 2.5rem .5rem 2.5rem;
+        display: flex;
+        height: fit-content;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .footer_main {
+        height: fit-content;
+        display: grid;
+        gap: 20px;
+        /* flex-direction: column; */
+    }
+
+    .footer_links {
+        position:inherit;
+        height: fit-content;
+    }
+
+    .footer_main h3 {
+        font-size: 1rem;
+    }
+
+    .footer_main a, .footer_main p {
+        font-size: .9rem;
+    }
+
+
+    .footer_logo_container img{
+        height: 100%;
+    }
+
+    .footer_infos{
+        position: inherit;
+        height: fit-content;
+        text-align: start;
+    }
+    .footer_logo_container {
+        position:inherit;
+        order: -1;
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+
+    .footer_links {
+        order: 0;
+    }
+
+    .footer_infos {
+        order: 1;
+    }
+
+    .footer_copyright p{
+        font-size: .6rem;
+    }
+
+}
