@@ -110,6 +110,7 @@ body {
 }
 main {
     padding: 15vh 10rem 2rem 10rem;
+    min-height: 80vh;
 }
 
 .hello {
