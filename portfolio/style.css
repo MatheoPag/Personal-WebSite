@@ -297,13 +297,13 @@ header {
 }
 .more_about_me_container {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   margin-top: 1.5rem;
   width: 100%;
-  display: flex;
 }
 .about_me {
-  width: 60%;
+  width: 100%;
   max-width: 50rem;
 }
 
@@ -329,27 +329,74 @@ header {
 }
 
 .skills_preview {
-  width: 30%;
-  text-align: end;
+  width: 100%;
+}
+
+.carousel {
+  position: relative;
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel::before,
+.carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  pointer-events: none; 
+  z-index: 2;
+}
+
+.carousel::before {
+  left: 0;
+  background: linear-gradient(to right, var(--primary) 0%, transparent 100%);
+}
+
+.carousel::after {
+  right: 0;
+  background: linear-gradient(to left, var(--primary) 0%, transparent 100%);
 }
 
 .skills_list {
   margin: 1.5rem 0;
   font-size: 1.2rem;
-
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  animation: spin 15s infinite linear;
+  padding-right: 1.5rem;
 }
 
 .skill {
   display: flex;
-  justify-content: end;
-  align-items: center;line-height: 2rem;
+  flex: 0 0 12rem; 
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  line-height: 2rem;
+  height: 9rem;
+  background-color: var(--surface);
+  border-radius: 1rem;
 }
 
-.skill img{
-  margin-left: 1rem;
-  
+.carousel_img {
+  width: 3rem;
 }
 
+@keyframes spin {
+  from {translate: 0;}
+  to {translate: -100%;}
+}
 .os_pref {
   text-align: start;
   font-size: 1.2rem;
@@ -572,20 +619,14 @@ iframe {
   }
 
   .more_about_me_container {
-    flex-direction: column;
     justify-content: start;
   }
-  .about_me {
-    width: 100%;
-  }
+  
   .skill {
     font-size: 1rem;
   }
   .os_pref {
     font-size: 1rem;
-  }
-  .skills_preview {
-    width: 100%;
   }
 }
 
