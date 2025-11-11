@@ -29,9 +29,19 @@
     gap: 8px;
 }
 
+.footer_links a {
+    display: flex;
+    align-items: center;
+}
+
+.icon_footer {
+    margin-right: .5rem;
+}
+
 .footer_logo_container{
     position: absolute;
     left: 50%;
+    top: 0;
     transform: translateX(-50%);
     height: 100%;
     display: flex;

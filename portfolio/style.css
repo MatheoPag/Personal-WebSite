@@ -285,10 +285,10 @@ header {
 }
 
 
-.icon {
+/* .icon {
   width: 24px;
   height: auto;
-}
+} */
 
 .more_about_me {
   padding: 13vh 100px 0 100px;
@@ -319,25 +319,16 @@ header {
   display: flex;
   align-items: center;
 }
-
-/* .info_row p{
-  font-size: 1.2rem;
-} */
-
-.info_row img, .info_row i{
-  /* width: 1.8rem;
-  height: 1.8rem; */
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
+.info_row i {
   margin-right: 1rem;
+}
+.icon{
   font-size: 1.5rem;
   color: var(--accent);
-  /* padding: .2rem; */
-  /* background-color: var(--accent); */
   border-radius: 100%;
 }
-.large_icon i{
+
+.large_icon{
   font-size: 1.3em;
 }
 .skills_preview{
@@ -393,7 +384,7 @@ header {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  animation: spin 15s infinite linear;
+  animation: spin 20s infinite linear;
   padding-right: 1.5rem;
 }
 
