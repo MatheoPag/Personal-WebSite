@@ -328,16 +328,24 @@ header {
   margin-right: 1rem;
 }
 
-.skills_preview {
+.skills_preview{
+  overflow: hidden;
   width: 100%;
+  position: relative;
 }
 
+.skills_preview h2{
+  display: flex;
+  justify-content: center;
+}
+
+
 .carousel {
-  position: relative;
   margin-top: 2rem;
   width: 100%;
   display: flex;
   overflow-x: auto;
+  overflow: hidden;
   scrollbar-width: none; 
   -ms-overflow-style: none;
 }
