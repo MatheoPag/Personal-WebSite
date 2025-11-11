@@ -387,7 +387,9 @@ header {
 
 .skill {
   display: flex;
-  flex: 0 0 12rem; 
+  /* flex: 0 0 12rem;  */
+  flex: none;
+  width: 12rem;
   flex-direction: column-reverse;
   align-items: center;
   justify-content: space-evenly;
@@ -399,6 +401,10 @@ header {
 
 .carousel_img {
   width: 3rem;
+}
+
+.red {
+  background: red;
 }
 
 @keyframes spin {
