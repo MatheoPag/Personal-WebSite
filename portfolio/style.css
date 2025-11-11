@@ -324,10 +324,22 @@ header {
   font-size: 1.2rem;
 } */
 
-.info_row img{
+.info_row img, .info_row i{
+  /* width: 1.8rem;
+  height: 1.8rem; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
   margin-right: 1rem;
+  font-size: 1.5rem;
+  color: var(--accent);
+  /* padding: .2rem; */
+  /* background-color: var(--accent); */
+  border-radius: 100%;
 }
-
+.large_icon i{
+  font-size: 1.3em;
+}
 .skills_preview{
   overflow: hidden;
   width: 100%;
