@@ -717,12 +717,13 @@ iframe {
   }
 
   .info {
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
     align-items: start;
     min-height: 50rem;
   }
 
   .infoBox {
+    margin-top: 8vh;
     width: 90%;
   }
 
