@@ -304,7 +304,6 @@ header {
 }
 .about_me {
   width: 100%;
-  max-width: 50rem;
 }
 
 .about_me_description {
@@ -312,6 +311,47 @@ header {
   display: flex;
   flex-direction: column; 
   text-align: justify; 
+}
+
+.about_me_grid {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.info_card {
+  display: flex;
+  padding: 50px 50px;
+  background-color: var(--dark-surface);
+  border-radius: 15px;
+  box-shadow: -5px 3px 8px 0px var(--shadow);
+  -webkit-box-shadow: -5px 3px 8px 0px var(--shadow);
+  -moz-box-shadow: -5px 1px 3px 0px var(--shadow);
+}
+
+
+
+.info_card_text {
+  padding-right: 5rem;
+}
+
+.info_card_text h2 {
+  margin-bottom: 1rem;
+}
+
+.info_card_image {
+  height: 10rem;
+  width: 10rem;
+
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+  /* Optionnel : pour ajuster la taille ou le positionnement */
+
+} 
+
+.info_card_image img {
+  height: 100%;
+  width: auto;
 }
 
 .info_row{
@@ -891,6 +931,36 @@ iframe {
   .expBlock h2, .expBlock h3 {
     font-size: 1em;
   }
+
+  .info_card_text {
+    padding: 0;
+  }
+
+  .info_card_text p {
+    text-align: justify;
+  }
+
+  .info_card {
+    padding: 40px 50px 50px 50px;
+    flex-direction: column-reverse;
+  }
+
+  .info_card_image {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 2rem;
+    height: 5rem;
+  }
+
+  .info_card_image img {
+    width: auto;
+    height: 100%;
+  }
+
+  .expBlock p {
+    text-align: justify;
+  }
   .experiences {
     padding-bottom: 150px;
   }
@@ -920,7 +990,7 @@ iframe {
     text-align: start;
     position: relative; 
   }
-   .step::before {
+  .step::before {
     content: "";
     width: 15px;
     height: 15px;
@@ -984,11 +1054,31 @@ iframe {
   }
 
 }
-@media screen and (min-width : 1900px ){ 
-  .about_me {
-    max-width: none;
+@media screen and (max-width : 1900px ){ 
+  .about_me_grid {
+    grid-template-columns: repeat(2, 1fr);
+
   }
 }
+
+@media screen and (max-width : 1400px ){ 
+  .about_me_grid {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+}
+
+@media screen and (min-width : 1400px ){ 
+  .info_card, .skill, .expBlock {
+    transition: transform 0.2s ease-in-out;
+  }
+  .info_card:hover, .skill:hover, .expBlock:hover {
+    transform: scale(1.05); /* Agrandit de 5% */
+  }
+
+
+}
+
 @media screen and (min-width : 2700px ){ 
 
 
