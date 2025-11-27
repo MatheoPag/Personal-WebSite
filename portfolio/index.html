@@ -12,6 +12,9 @@
 
 </head>
 <body>
+    <div class="theme_selector">
+        <button id="themeBtn" onclick="changeTheme()"><i class="fa-solid fa-sun"></i></button>
+    </div>
     <header>
         <div class="title">
             <h1>Mathéo Paganardi</h1>
@@ -19,11 +22,10 @@
             <h2 class="light">Étudiant</h2>
         </div>
         <div class="liens" id="panel">
-            <!-- <button id="closePanel" class="toogleBtn" onclick="tooglePanel()"><img src="./images/close.png" alt="menu button"></button> -->
             <a href="#more_about_me" onclick="tooglePanel()">À propos de moi</a>
             <a href="#experiences" onclick="tooglePanel()">Mes experiences</a>
             <a href="/contact.html" onclick="tooglePanel()">Me contacter</a>
-            <a href="https://github.com/MatheoPag" target="_blank" id="projets" aria-valuetext="Changement de page : Redirection vers ma page github">Mes projets</a>
+            <a href="https://github.com/MatheoPag" target="_blank" id="projets" class="rounded_btn" aria-valuetext="Changement de page : Redirection vers ma page github">Mes projets</a>
         </div>
         <button id="menu_btn" class="toogleBtn" onclick="tooglePanel()"><img src="./images/menu.png" alt=""/></button>
     </header>
@@ -48,28 +50,14 @@
                         <h2>À propos de moi</h2>
                         <p>Je m'appelle Mathéo Paganardi, passionné d'informatique.<br>J’aime explorer différents domaines et créer mes propres projets — ce site en fait partie.</p>
                         <div class="liensInfo">
-                            <a href="#more_about_me" class="moreBtn">En savoir plus ? &#8595;</a>
-                            <!-- <a href="#experiences" class="xpBtn">Mes experiences</a> -->
+                            <a href="#more_about_me" class="rounded_btn">En savoir plus ? &#8595;</a>
                         </div>
                     </div>
                 </div> 
             </div>
         </section>
         <section id="more_about_me" class="more_about_me">
-            <!-- <div class="containerFrise">
-                <div class="frise">
-                    <div class="step">
-                        <span class="year">2022-2025</span>
-                        <span class="place">Ile Maurice</span>
-                        <span class="status">Lycée</span>
-                    </div>
-                    <div class="step">
-                        <span class="year">2025</span>
-                        <span class="place">Lyon (France)</span>
-                        <span class="status">Études supérieures</span>
-                    </div>
-                </div>
-            </div> -->
+
             <div class="more_about_me_container">
                 
                 <div class="skills_preview">
@@ -103,19 +91,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="about_me">
-                    <h2>Qui est Mathéo PAGANARDI ? En 5 points...</h2>
-                    <div class="about_me_description">
-                            <span class="info_row"><i class="fa-duotone fa-regular fa-circle-user icon"></i><p>J'ai grandi à <b>l’Île Maurice</b> et je vis aujourd’hui en <b>France</b> pour mes <b>études en informatique.</b></p></span>
-                            <span class="info_row"><i class="fa-solid fa-microchip icon"></i><p>La manière dont la <b>technologie</b> peut <b>résoudre des problèmes</b> réels et donner vie à des idées me fascine.</p></span>
-                            <span class="info_row"><i class="fa-solid fa-code icon large_icon"></i><p>Ma passion ? <b>Explorer</b> différents domaines de l’informatique, du <b>software</b> au <b>hardware</b>, et concrétiser mes projets, comme ce site.</p></span>
-                            <span class="info_row"><i class="fa-solid fa-atom icon"></i><p><b>L’intelligence artificielle</b> est le domaine qui m'intéresse le plus, un domaine dans lequel j’aimerais me <b>spécialiser et atteindre un haut niveau d’expertise.</b></p></span>
-                            <span class="info_row"><i class="fa-brands fa-linux icon"></i><p>Je travaille aussi bien sous <b>Windows</b> que sous <b>Linux</b> — ce dernier restant mon préféré.<br>La plupart du temps, je travaille sur <b>Debian 12</b>.</p></span>
-                        </ul>
-                    </div>
-                </div> -->
                 <div class="about_me">
-                    <!-- <h2>Qui est Mathéo PAGANARDI ? En 5 points...</h2> -->
                     <div class="about_me_grid">
                             <div class="info_card">
                                 <div class="info_card_text">
@@ -234,3 +210,6 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+<!-- <i class="fa-solid fa-moon"></i> <i class="fa-solid fa-sun"></i> -->
