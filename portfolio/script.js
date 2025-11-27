@@ -8,25 +8,22 @@ function changeTheme() {
 
   btn = document.getElementById("themeBtn")
   footer_logo = document.getElementById("footer_logo")
+  menu_btn = document.getElementById("menu_btn_img")
 
   if (theme === "Dark") {
     document.querySelector('html').classList.remove("dark_theme")
     document.querySelector('html').classList.add("light_theme")
     btn.innerHTML = "<i class='fa-solid fa-moon'></i>"
     footer_logo.src = "/images/Logo/Logo_black_transparent_M.png"
-
+    menu_btn.src = "./images/menu_bk.png"
     theme = "Light"
   }
   else if (theme === "Light") {
-    // document.documentElement.style.setProperty('--primary', '#202020');
-    // document.documentElement.style.setProperty('--text', '#dddddd');
-    // document.documentElement.style.setProperty('--accent', '#6140c4');
-    // document.documentElement.style.setProperty('--dark-surface', '#232323');
-    // document.documentElement.style.setProperty('--surface', '#333333');
     document.querySelector('html').classList.remove("light_theme")
     document.querySelector('html').classList.add("dark_theme")
     btn.innerHTML = "<i class='fa-solid fa-sun'></i>"
     footer_logo.src = "/images/Logo/Logo_white_transparent_M.png"
+    menu_btn.src = "./images/menu.png"
 
     theme = "Dark"
 

@@ -17,17 +17,6 @@
   --button-text : #dddddd;
   --button-text-hover : #1e1e1e; 
 }
-/* 
-.light_theme {
-  --primary: #fff;
-  --text: #303030;
-  --accent: #4361ee;
-  --dark-surface: #faebdc; 
-  --surface: #fffaf5;
-  --shadow: rgba(0,0,0,0.1);
-  --primary-footer : #faebdc;
-
-} */
 
 .light_theme {
   --primary: #f5f5f5;         
@@ -38,9 +27,7 @@
   --primary-footer: #ececec;
   --button-text : #dddddd;
   --shadow: rgba(173, 173, 173, 0.1);
-
   --button-text-hover : #1e1e1e; 
-
 }
 
 
@@ -57,7 +44,6 @@
 
 }
 
-/* 11 15 */
 @font-face {
   font-family: 'Montserrat';
   src: url('./fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
@@ -803,6 +789,16 @@ iframe {
     margin-bottom: 20px;
     font-weight: 600;
   }
+
+  #projets {
+    color: var(--button-text);
+  }
+
+  #projets:hover {
+    color: var(--button-text-hover);
+
+  }
+
   #closePanel{
     margin-bottom: 50px;
     width: 40px;
